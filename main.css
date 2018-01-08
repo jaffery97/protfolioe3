@@ -1,0 +1,267 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+   font-family:serif;
+  color: #777;
+}
+
+nav {
+/*    background-color:rgba(0,0,0,0.5);*/
+    width: 100%;
+    top:0px;
+    right: 0px;
+    text-align: right;
+    padding: 4px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+/*  background-image: url("img/main.jpg"); */
+    background-color: lavender;
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("img/img6.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img/feng-shui-1960783_1920.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+    color: white;}
+
+.capti {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 50%;
+  text-align: center;
+  color: white;
+}
+.capt {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  width: 50%;
+  text-align: justify;
+  color: white;
+  padding-right: 33px;
+    
+}
+
+
+.captio {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: black;
+    text-align: center;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.captio span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+.footer {
+    bottom: 100%;
+    width: 100%;
+    background-color: lightslategrey;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+
+
+.bgimg-4 {
+      background-image: url("img/img1.jpg");
+  height: 100%;
+}
+.bgimg-5 {
+      background-image: url("img/img4.jpg");
+  height: 100%;
+}
+
+.btn {
+    padding-top: 30px;
+    text-align: center;
+}
+.buttn {
+    padding: 20px;
+    background-color: lightseagreen;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.buttn:hover {
+    filter: sepia(3);
+    box-shadow: 0px 0px 30px 0px;
+    
+}
+.profile {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    transition: .8s;
+    border: 3px solid green;
+    box-shadow: 0px 0px 20px 0px white;
+ 
+}
+
+.profile:hover {
+   border: 3px solid blue;
+    transition: .9s;
+    height: 210px;
+    width: 210px;
+    
+}
+
+.bt {
+    float: right;
+    text-align: right;
+    padding-right: 8px;
+}
+
+.but {
+    background-color: darkslategrey;
+    color: white;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: black;
+    
+}
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 50px;
+	margin: 0px;
+    
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 2%;
+    background-color: rgba(0,0,0,0.3);
+    padding: 12px;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 48%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+.social {
+    width: 50px;
+    
+}
+
+.social:hover {
+    filter: invert(100%);
+    
+}
